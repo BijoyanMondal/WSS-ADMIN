@@ -1,0 +1,137 @@
+.logo img {
+    width: 80px;
+}
+.padding-top-10 {
+  padding:10px 0 0 0 ;
+}
+.filter-box-top {
+    margin-bottom: -30px;
+    display: flex;
+}
+input.form-control.multiselect-search {
+    height: 40px;
+}
+button.btn.btn-default.btn-white.btn-grey.multiselect-clear-filter {
+    height: 40px;
+}
+.dropdown-menu {
+    min-width: 200px;
+    padding: 0px;
+}
+ul.pager {
+    padding: 2px;
+    display: inline-block;
+    width: 100%;
+}
+.paginationAll {
+    text-align: center;
+}
+.small-logo img {
+    width: 100%;
+    padding: 2px;
+}
+.logout a {
+    padding-right: 10px !important;
+}
+.navbar-buttons.navbar-header.pull-right {
+    margin-right: -10px;
+}
+.rightFilterJobDetails {
+    float: right;
+    width: 40%;
+    margin-top: 10px;
+    line-height: 38px;
+}
+.boxJobDetailsAll hr {
+    margin: 10px 0;
+}
+.widget-main.box-job-details {
+    height: 150px;
+    overflow: auto;
+}
+.boxJobItemAll {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.job-item {
+    margin-top: 40px;
+}
+.addBttn {
+    text-align: right;
+}
+.table-header {
+    margin-bottom: 15px;
+}
+span.view-download {
+    float: right;
+    margin-right: 10px;
+}
+.checkbox label, .radio label {
+    padding-left: 10px;
+}
+.table-responsive {
+    overflow: auto !important;
+}
+.input-fld {
+    width: 100%;
+}
+.modal-footer {
+    padding: 10px;
+    text-align: center;
+}
+.modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #E4E9EE;
+    background-color: #EFF3F8;
+}
+h5.total-clint {
+    margin-bottom: -20px;
+    color: #438EB9;
+}
+
+table.table.table-vcenter.table-condensed.table-bordered.serch {
+    background: #EFF3F8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Bijoyan */
+@media only screen and (max-width: 767px) {
+  .serchclie input.form-control {
+    width: 142px;
+    display: block;
+}
+  .rightFilterJobDetails {
+    width: 100%;
+    text-align: center;
+}
+  .filter-box-top {
+      margin-bottom: 0;
+      display: flex;
+  }
+  .nav-tabs>li>a {
+    padding: 7px 10px 8px;
+}
+.col-xs-6.pgination {
+    width: 100%;
+    text-align: center;
+}
+.dataTables_filter, .dataTables_paginate {
+    text-align: center;
+}
+}
+@media only screen and (min-width: 768px){
+#bill-invoice .modal-dialog {
+    width: 700px;
+    margin: 30px auto;
+}
+}
