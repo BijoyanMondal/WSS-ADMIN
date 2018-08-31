@@ -93,14 +93,38 @@ table.table.table-vcenter.table-condensed.table-bordered.serch {
     background: #EFF3F8;
 }
 
+.width-22{
+  width: 22px !important;
+}
+.width-22 i{
+  font-size: 12px !important;
+}
+.tmLd-srch {
 
+  margin: 0 auto;
+}
+.tmLd-srch button.multiselect.dropdown-toggle.btn.btn-white.btn-primary {
+    width: 100%;
+}
+.tmLd-srch .btn-group {
+    width: 100%;
+}
 
-
-
-
-
-
-
+.tmLd-srch {
+    margin-bottom: 20px;
+}
+.add .in-text {
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+.jobViewBlock .widget-box {
+    margin-bottom: 20px;
+}
+.setting-sev-bttn{
+  margin-top: 25px;
+   height: 35px;
+   line-height: 10px
+  }
 
 
 

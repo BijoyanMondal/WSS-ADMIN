@@ -106,7 +106,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -203,7 +203,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active">
 						<a href="report.html">
 								<i class="menu-icon fa fa-bug"></i>
 							<span class="menu-text"> Report </span>
@@ -326,7 +326,7 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="index.html">Admin</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li class="active">Report</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -346,36 +346,15 @@
 								<!-- PAGE CONTENT BEGINS -->
 								<div class="widget-box transparent" id="recent-box">
 									<div class="widget-header">
-										<h4 class="widget-title lighter smaller">
-											<div class="form-group filter-box-top">
-<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="food">Select Business Name</label>
-
-<div class="col-xs-12 col-sm-9">
-	<select id="business_name" class="multiselect" multiple="">
-		<option value="cheese">Morestone Group</option>
-		<option value="tomatoes">Morestone Group</option>
-		<option value="mozarella">Morestone Group</option>
-		<option value="mushrooms">Morestone Group</option>
-		<option value="pepperoni">Morestone Group</option>
-		</select>
-
-
-</div>
-</div>
-																						</h4>
 
 										<div class="widget-toolbar no-border">
 											<ul class="nav nav-tabs" id="recent-tab">
 												<li class="active">
-													<a data-toggle="tab" href="#jobs-to-do">Jobs To Do</a>
+													<a data-toggle="tab" href="#report-cr">Report (Cr)</a>
 												</li>
 
 												<li>
-													<a data-toggle="tab" href="#job-completed">Jobs Completed</a>
-												</li>
-
-												<li>
-													<a data-toggle="tab" href="#job-canceled">Jobs canceled</a>
+													<a data-toggle="tab" href="#report-dr">Report (Dr)</a>
 												</li>
 											</ul>
 										</div>
@@ -384,13 +363,62 @@
 									<div class="widget-body">
 										<div class="widget-main padding-0">
 											<div class="tab-content">
-												<div id="jobs-to-do" class="tab-pane active">
+												<div id="report-cr" class="tab-pane active">
 
 													<div class="allDashboard">
 														<div class="table-header">
-															Jobs To Do
+															Report (Cr)
 														</div>
 
+														<form action="" class="serchclie">
+														                <div class="table-responsive">
+														                    <table width="100%" class="table table-vcenter table-condensed table-bordered serch">
+														                        <tbody><tr>
+														                                <td><input type="text" value="" name="businessName" class="form-control" placeholder="Business Name"></td>
+																														<td>
+                                    <select name="duration" id="duration" class="form-control">
+                                        <option value="">All</option>
+                                        <option value="1">This Month</option>
+                                        <option value="2">Last Month</option>
+                                        <option value="3">This Year</option>
+                                        <option value="4">Last Year</option>
+                                        <option value="5">Current Financial Year</option>
+                                        <option value="6">Previous Financial Year</option>
+                                    </select>
+                                </td>
+																<td>
+																	<div class="input-group">
+																		<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" />
+																		<span class="input-group-addon">
+																		<i class="fa fa-calendar bigger-110"></i>
+																		</span>
+																	</div>
+																</td>
+																<td>
+																	<div class="input-group">
+																		<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy" />
+																		<span class="input-group-addon">
+																		<i class="fa fa-calendar bigger-110"></i>
+																		</span>
+																	</div>
+																</td>
+														    <td class="center"><button class="btn btn-sm btn-primary">Go <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></td>
+													</tr>
+											 </tbody>
+										 </table>
+										</div>
+								</form>
+								<div class="totl">
+									<p class="in-text text-center" >Selecting dates from 1980-01-01 00:00:00 to 2018-08-29 17:37:17</p>
+									<div class="row">
+								<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+									<p class="in-text text-left"><span><b>Total</b> </span></p>
+								</div>
+								<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+									<p class="in-text text-right"><span><b>$118892.36</b> </span></p>
+								</div>
+							</div>
+								</div>
 														<!-- div.table-responsive -->
 
 														<!-- div.dataTables_borderWrap -->
@@ -400,105 +428,90 @@
 															<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 																<thead>
 																	<tr>
-																		<th class="center">Job ID</th>
 																		<th>Business Name</th>
+																		<th>Job ID</th>
 																		<th>Job Title</th>
-																		<th>Inv Amount</th>
 																		<th>Paid Amount</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
+																		<th>Payment Date</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
 																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>27/08/2018</td>
+																	</tr>
+																	<tr>
+																		<td>Blue Door Apartments</td>
+																		<td><a href="job-details.html">15985</a></td>
+																		<td><a href="job-details.html">	Web Hosting and Service renewals</a></td>
+																		<td>6,400</td>
+																		<td>27/08/2018</td>
 																	</tr>
 																</tbody>
 															</table>
@@ -528,268 +541,193 @@
 													</div>
 												</div>
 
-												<div id="job-completed" class="tab-pane">
+												<div id="report-dr" class="tab-pane active">
+
 													<div class="allDashboard">
 														<div class="table-header">
-															Jobs Completed
+															Report (Dr)
 														</div>
-
+														<small>After searching dates only Paid jobs are shown</small>
+														<form action="" class="serchclie">
+														                <div class="table-responsive">
+														                    <table width="100%" class="table table-vcenter table-condensed table-bordered serch">
+														                        <tbody><tr>
+														                                <td><input type="text" value="" name="businessName" class="form-control" placeholder="Business Name"></td>
+																														<td>
+                                    <select name="duration" id="duration" class="form-control">
+                                        <option value="">All</option>
+                                        <option value="1">This Month</option>
+                                        <option value="2">Last Month</option>
+                                        <option value="3">This Year</option>
+                                        <option value="4">Last Year</option>
+                                        <option value="5">Current Financial Year</option>
+                                        <option value="6">Previous Financial Year</option>
+                                    </select>
+                                </td>
+																<td>
+																	<div class="input-group">
+																		<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" />
+																		<span class="input-group-addon">
+																		<i class="fa fa-calendar bigger-110"></i>
+																		</span>
+																	</div>
+																</td>
+																<td>
+																	<div class="input-group">
+																		<input class="form-control date-picker" id="id-date-picker-2" type="text" data-date-format="dd-mm-yyyy" />
+																		<span class="input-group-addon">
+																		<i class="fa fa-calendar bigger-110"></i>
+																		</span>
+																	</div>
+																</td>
+														    <td class="center"><button class="btn btn-sm btn-primary">Go <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></td>
+													</tr>
+											 </tbody>
+										 </table>
+										</div>
+								</form>
+								<div class="totl">
+									<p class="in-text text-center" >Selecting dates from 1980-01-01 00:00:00 to 2018-08-29 17:37:17</p>
+									<div class="row">
+								<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+									<p class="in-text text-left"><span><b>Total</b> </span></p>
+								</div>
+								<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+									<p class="in-text text-right"><span><b>$6518.36</b> </span></p>
+								</div>
+							</div>
+								</div>
 														<!-- div.table-responsive -->
 
 														<!-- div.dataTables_borderWrap -->
 														<div>
 															<div class="table-responsive">
 
-															<table id="dynamic-table2" class="table table-striped table-bordered table-hover">
+															<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 																<thead>
 																	<tr>
-																		<th class="center">Job ID</th>
-																		<th>Business Name</th>
-																		<th>Job Title</th>
-																		<th>Module Charge</th>
-																		<th>Inv Amount</th>
-																		<th>Amount owed</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
+																		<th>ID</th>
+																		<th>Team Leader</th>
+																		<th>Invoice No.</th>
+																		<th>Job Item (Count)</th>
+																		<th>Invoice Date</th>
+																		<th>Invoice Amount</th>
+																		<th>Paid Amount (AUD)</th>
+																		<th>Is Paid	</th>
+																		<th>Payment Date</th>
 																	</tr>
 																</thead>
 																<tbody>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
 																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
+																		<td>1</td>
+																		<td>John Israel</td>
+																		<td>inv02520777</td>
+																		<td>10</td>
+																		<td>2018-04-16</td>
+																		<td>341.25</td>
+																		<td>453.00</td>
+																		<td>Paid</td>
+																		<td>03/05/2018</td>
 																	</tr>
-
-																</tbody>
-															</table>
-														</div>
-														<!-- Start pagination -->
-													<div class="paginationAll">
-														<ul class="pagination">
-														<li>
-														<a href="#" aria-label="Previous">
-														<span aria-hidden="true">Previous</span>
-														</a>
-														</li>
-														<li class="active"><a href="#">1</a></li>
-														<li><a href="#">2</a></li>
-														<li><a href="#">3</a></li>
-														<li><a href="#">4</a></li>
-														<li><a href="#">5</a></li>
-														<li>
-														<a href="#" aria-label="Next">
-														<span aria-hidden="true">Next</span>
-														</a>
-														</li>
-														</ul>
-														</div>
-														<!-- End Start pagination -->
-														</div>
-													</div>
-												</div><!-- /.#job-completed -->
-
-												<div id="job-canceled" class="tab-pane">
-													<div class="allDashboard">
-														<div class="table-header">
-															Jobs Canceled
-														</div>
-
-														<!-- div.table-responsive -->
-
-														<!-- div.dataTables_borderWrap -->
-														<div>
-															<div class="table-responsive">
-
-															<table id="dynamic-table2" class="table table-striped table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th class="center">Job ID</th>
-																		<th>Business Name</th>
-																		<th>Job Title</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
-																	</tr>
-																</thead>
-
-																<tbody>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-
-																	</tr>
-
 																</tbody>
 															</table>
 														</div>
@@ -817,6 +755,8 @@
 														</div>
 													</div>
 												</div>
+
+
 											</div>
 										</div><!-- /.widget-main -->
 									</div><!-- /.widget-body -->
@@ -858,18 +798,6 @@
 				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
 			</a>
 		</div><!-- /.main-container -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -915,6 +843,7 @@
 				</div><!-- /send-newsletter modal -->
 
 
+
 		<!--[if !IE]> -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 
@@ -943,9 +872,19 @@
 		<script src="assets/js/bootstrap-multiselect.min.js"></script>
 		<script src="assets/js/select2.min.js"></script>
 		<script src="assets/js/jquery-typeahead.js"></script>
-
+<script src="assets/js/bootstrap-datepicker.min.js"></script>
 				<!-- inline scripts related to this page -->
 				<script type="text/javascript">
+				//datepicker plugin
+								//link
+								$('.date-picker').datepicker({
+									autoclose: true,
+									todayHighlight: true
+								})
+								//show datepicker when clicking on the icon
+								.next().on(ace.click_event, function(){
+									$(this).prev().focus();
+								});
 
 				$('[data-rel=tooltip]').tooltip();
 				$('[data-rel=popover]').popover({html:true});
@@ -1214,7 +1153,6 @@
 					//
 				});
 		</script>
-
 
 
 	</body>

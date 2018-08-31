@@ -140,7 +140,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="active">
+					<li class="">
 						<a href="package-item.html">
 								<i class="menu-icon fa fa-calendar-plus-o"></i>
 							<span class="menu-text"> Package Item </span>
@@ -302,7 +302,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="#" data-toggle="modal" data-target="#send-newsletter" >
+							<a href="#" data-toggle="modal" data-target="#send-newsletter" >
 									<i class="menu-icon fa fa-caret-right"></i>
 									Send Newsletter
 								</a>
@@ -326,7 +326,7 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="index.html">Admin</a>
 							</li>
-							<li class="active">Manage Package Item</li>
+							<li class="active">Manage Job Payment</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -345,7 +345,7 @@
 						<!-- Add Bttn -->
 
 						<div class="addBttn">
-							<button data-toggle="modal" data-target="#add-package-item" class="btn btn-success btn-sm" data-rel="tooltip" title="" data-original-title="Add Package Item">
+							<button data-toggle="modal" data-target="#edit-job-payment" class="btn btn-success btn-sm" data-rel="tooltip" title="" data-original-title="Add Package Item">
 									<i class="ace-icon fa fa-plus icon-only"></i>
 							</button>
 						</div>
@@ -355,29 +355,20 @@
 								<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 									<thead>
 										<tr>
-											<th>ID</th>
-											<th>Package Name</th>
-											<th>Package Item Name</th>
-											<th>Charge</th>
-											<th>Inv Charge</th>
-											<th>Status</th>
+											<th>Job Title</th>
+											<th>Amount Paid</th>
+											<th>Payment Date</th>
 											<th>Actions</th>
 										</tr>
 									</thead>
 									<tbody>
 
 										<tr>
-											<td>1</td>
-											<td>Basic Website Package</td>
-											<td>Basic Website Package - Website Development</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -391,13 +382,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -412,17 +396,11 @@
 													</td>
 										</tr>
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -436,13 +414,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -456,19 +427,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -482,13 +446,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -502,19 +459,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -528,13 +478,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -548,19 +491,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -574,13 +510,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -594,19 +523,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -620,13 +542,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -640,19 +555,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -666,13 +574,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -686,19 +587,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -712,13 +606,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -732,19 +619,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -758,13 +638,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -778,19 +651,12 @@
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>Web Hosting and Service renewals</td>
+											<td>265.95</td>
+											<td>2018-08-27 05:37:45</td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
 
 															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																<i class="ace-iconfa fa fa-trash-o"></i>
@@ -804,13 +670,6 @@
 																</button>
 
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View"  data-toggle="modal" data-target="#edit-package-item" >
-																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
-																			</span>
-																		</a>
-																	</li>
 																	<li>
 																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
 																			<span class="blue">
@@ -886,39 +745,25 @@
 		<!-- basic scripts -->
 
 
-		<!-- Add Contact Modal -->
-		<div class="modal fade" id="add-package-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<!-- Add Job Payment Modal -->
+		<div class="modal fade" id="edit-job-payment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Add Job Package</h4>
+						<h4 class="modal-title" id="myModalLabel">Edit Job Payment</h4>
 					</div>
 					<div class="modal-body">
-						<form action="">
-							<div class="select-dflt form-group">
-												<label for="form-field-select-1">Package Title</label>
-												<select class="form-control" id="form-field-select-1">
-													<option value="" disabled selected>Select Package Title</option>
-	                         <option value="1">Basic Website Package(1)</option>
-                          <option value="4">Online Shop Package(4)</option>
-                          <option value="3">Premium Website Package(3)</option>
-                          <option value="2">Professional Website Package(2)</option>
-												</select>
-										</div>
-								<div class="form-group">
-											<label for="form-field-select-1">Package Item</label>
-											<input type="text" id="form-field-1" placeholder="Package Item" class="input-fld">
-									</div>
-									<div class="form-group">
-												<label for="form-field-select-1">Charge</label>
-												<input type="text" id="form-field-1" placeholder="Package Item Charge" class="input-fld">
-										</div>
-										<div class="form-group">
-													<label for="form-field-select-1">Inv Charge</label>
-													<input type="text" id="form-field-1" placeholder="Package Item Inv Charge" class="input-fld">
-											</div>
-						</form>
+						<p class="in-text"><span><b>Job Name</b></span> : Web Hosting and Service renewals</p>
+					 <hr>
+					 <p class="in-text"><span><b>Job Cost</b></span> : $265.95</p>
+					 <hr>
+					 <p class="in-text"><span><b>Due Amount</b></span> : $265.95</p>
+					 <hr>
+					 <div class="form-group">
+								 <label for="form-field-select-1">Pay Amount</label>
+								 <input type="text" id="form-field-1" placeholder="Pay Amount" class="input-fld">
+						 </div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
@@ -927,52 +772,6 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-
-
-
-			<!-- Edit edit-job-package Modal -->
-			<div class="modal fade" id="edit-package-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Edit Package Item</h4>
-						</div>
-						<div class="modal-body">
-							<form action="">
-								<div class="select-dflt form-group">
-													<label for="form-field-select-1">Package Title</label>
-													<select class="form-control" id="form-field-select-1">
-														<option value="" disabled selected>Select Package Title</option>
-														 <option value="1">Basic Website Package(1)</option>
-														<option value="4">Online Shop Package(4)</option>
-														<option value="3">Premium Website Package(3)</option>
-														<option value="2">Professional Website Package(2)</option>
-													</select>
-											</div>
-									<div class="form-group">
-												<label for="form-field-select-1">Package Item</label>
-												<input type="text" id="form-field-1" placeholder="Package Item" class="input-fld">
-										</div>
-										<div class="form-group">
-													<label for="form-field-select-1">Charge</label>
-													<input type="text" id="form-field-1" placeholder="Package Item Charge" class="input-fld">
-											</div>
-											<div class="form-group">
-														<label for="form-field-select-1">Inv Charge</label>
-														<input type="text" id="form-field-1" placeholder="Package Item Inv Charge" class="input-fld">
-												</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
-							<button type="button" class="btn btn-primary"><i class="ace-icon fa fa-floppy-o"></i> Save</button>
-						</div>
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
-
 
 
 
@@ -994,7 +793,6 @@
 				</div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-
 
 
 
@@ -1040,6 +838,7 @@
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
 				</div><!-- /send-newsletter modal -->
+
 
 
 

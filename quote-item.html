@@ -140,7 +140,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="active">
+					<li class="">
 						<a href="package-item.html">
 								<i class="menu-icon fa fa-calendar-plus-o"></i>
 							<span class="menu-text"> Package Item </span>
@@ -167,7 +167,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active">
 						<a href="quote-item.html">
 								<i class="menu-icon fa fa-quote-left"></i>
 							<span class="menu-text"> Quote Item</span>
@@ -326,7 +326,7 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="index.html">Admin</a>
 							</li>
-							<li class="active">Manage Package Item</li>
+							<li class="active">Manage Quote Module</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -344,8 +344,22 @@
 						<div class="team">
 						<!-- Add Bttn -->
 
+
+								<form action="" class="serchclie">
+                <div class="table-responsive">
+                    <table width="100%" class="table table-vcenter table-condensed table-bordered serch">
+                        <tbody><tr>
+													<td><input type="text" value="" name="jobID" class="form-control" placeholder="ID"></td>
+														<td><input type="text" value="" name="businessName" class="form-control" placeholder="Business Name"></td>
+														<td><input type="text" value="" name="jobTitle" class="form-control" placeholder="Quote Item Title"></td>
+                            <td class="center"><button class="btn btn-sm btn-primary">Go <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></td>
+                            </tr>
+                        </tbody></table>
+                </div>
+            </form>
 						<div class="addBttn">
-							<button data-toggle="modal" data-target="#add-package-item" class="btn btn-success btn-sm" data-rel="tooltip" title="" data-original-title="Add Package Item">
+
+							<button data-toggle="modal" data-target="#add-quote-module" class="btn btn-success btn-sm" data-rel="tooltip" title="" data-original-title="Add Quote Module">
 									<i class="ace-icon fa fa-plus icon-only"></i>
 							</button>
 						</div>
@@ -356,469 +370,354 @@
 									<thead>
 										<tr>
 											<th>ID</th>
-											<th>Package Name</th>
-											<th>Package Item Name</th>
+											<th>Business Name</th>
+											<th>Quote Title</th>
+											<th>Module Name</th>
+											<th>Quote Hours</th>
 											<th>Charge</th>
-											<th>Inv Charge</th>
+											<th>GST</th>
+											<th>Priority</th>
 											<th>Status</th>
-											<th>Actions</th>
+											<th>Action</th>
 										</tr>
 									</thead>
 									<tbody>
 
 										<tr>
-											<td>1</td>
-											<td>Basic Website Package</td>
-											<td>Basic Website Package - Website Development</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View">
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
 													</td>
 										</tr>
-
 										<tr>
-											<td>1</td>
-											<td>Websites</td>
-											<td>Basic Website Package</td>
-											<td>$350.00 USD</td>
-											<td>$900.00 USD</td>
-											<td><span class="label label-sm label-success">Active</span></td>
+											<td>1762</td>
+											<td>Luxury Golf Tours Down Under</td>
+											<td>Hosting renewals</td>
+											<td>DNS Hosting redirect (12 months) golftoursdownunder.com</td>
+											<td>0.00 hrs.</td>
+											<td>$19.95</td>
+											<td>$0.00</td>
+											<td>Low</td>
+											<td><span class="label label-sm label-success">Accepted </span></td>
 											<td>
 														<div class="hidden-sm hidden-xs btn-group">
-															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View" data-toggle="modal" data-target="#edit-package-item" >
-																<i class="ace-icon fa fa-pencil bigger-120"></i>
-															</button>
-
-															<button class="btn btn-xs btn-danger" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																<i class="ace-iconfa fa fa-trash-o"></i>
+															<button class="btn btn-xs btn-info" data-rel="tooltip" title="" data-original-title="View">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
 															</button>
 														</div>
-
 														<div class="hidden-md hidden-lg">
 															<div class="inline pos-rel">
 																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
 																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
 																</button>
-
 																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
 																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="View"  data-toggle="modal" data-target="#edit-package-item" >
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
 																			<span class="blue">
-																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
 																			</span>
 																		</a>
 																	</li>
-																	<li>
-																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete"  data-toggle="modal" data-target="#delete-package-item" >
-																			<span class="blue">
-																				<i class="ace-iconfa fa fa-trash-o"></i>
-																			</span>
-																		</a>
-																	</li>
-
 																</ul>
 															</div>
 														</div>
@@ -887,37 +786,129 @@
 
 
 		<!-- Add Contact Modal -->
-		<div class="modal fade" id="add-package-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="add-quote-module" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Add Job Package</h4>
+						<h4 class="modal-title" id="myModalLabel">Add Quote Module</h4>
 					</div>
 					<div class="modal-body">
 						<form action="">
 							<div class="select-dflt form-group">
-												<label for="form-field-select-1">Package Title</label>
+												<label for="form-field-select-1">Quote Title</label>
 												<select class="form-control" id="form-field-select-1">
-													<option value="" disabled selected>Select Package Title</option>
-	                         <option value="1">Basic Website Package(1)</option>
-                          <option value="4">Online Shop Package(4)</option>
-                          <option value="3">Premium Website Package(3)</option>
-                          <option value="2">Professional Website Package(2)</option>
+													<option value="" selected disabled>Select Quote Title</option>
+													<option value="1722">Website Development(1722 - Body and Soul)</option>
+													<option value="1701">Website and APP Development(1701 - Farren Hotham)</option>
+													<option value="1678">New Website Development(1678 - Mudgee Golf Club)</option>
+													<option value="1667">Website Development(1667 - Rohit chemicals)</option>
+													<option value="1637">Basic Website Package(1637 - )</option>
+													<option value="1633">Basic Website Package(1633 - Test 1 Bussiness name)</option>
+													<option value="1609">Basic Website Package(1609 - )</option>
+													<option value="1608">Basic Website Package(1608 - )</option>
+													<option value="1606">Basic Website Package(1606 - )</option>
+													<option value="1604">Basic Website Package(1604 - )</option>
+													<option value="1605">Basic Website Package(1605 - )</option>
+													<option value="1600">job without appeoval ticked(1600 - )</option>
+													<option value="1597">Basic Website Package(1597 - )</option>
+													<option value="1602">Basic Website Package(1602 - )</option>
+													<option value="1593">Basic Website Package(1593 - Test 1 Bussiness name)</option>
+													<option value="1587">Basic Website Package(1587 - )</option>
+													<option value="1585">Basic Website Package(1585 - )</option>
+													<option value="1586">Basic Website Package(1586 - )</option>
+													<option value="1589">Basic Website Package(1589 - test)</option>
+													<option value="1579">Professional Website Package(1579 - test)</option>
+													<option value="1580">Professional Website Package(1580 - test)</option>
+													<option value="1581">Professional Website Package(1581 - test)</option>
+													<option value="1582">Basic Website Package(1582 - test)</option>
+													<option value="1583">Basic Website Package(1583 - test)</option>
+													<option value="1584">Basic Website Package(1584 - test)</option>
+													<option value="1560">Logo Change(1560 - test)</option>
+													<option value="1561">Logo Change(1561 - test)</option>
+													<option value="1562">menu updation(1562 - test)</option>
+													<option value="1564">test quote(1564 - has 0 orders)</option>
+													<option value="1567">Basic Website Package(1567 - test)</option>
+													<option value="1570">Basic Website Package(1570 - )</option>
+													<option value="1571">Basic Website Package(1571 - )</option>
+													<option value="1572">Basic Website Package(1572 - )</option>
+													<option value="1574">test 2 no approval(1574 - )</option>
+													<option value="1575">Basic Website Package(1575 - )</option>
+													<option value="1552">Basic Website Package(1552 - test)</option>
+													<option value="1553">Basic Website Package(1553 - test)</option>
+													<option value="1554">Basic Website Package(1554 - test)</option>
+													<option value="1555">Basic Website Package(1555 - test)</option>
+													<option value="1556">Basic Website Package(1556 - test)</option>
+													<option value="1557">Basic Website Package(1557 - test)</option>
+													<option value="1558">Basic Website Package(1558 - test)</option>
+													<option value="1551">Basic Website Package(1551 - test)</option>
+													<option value="1550">Basic Website Package(1550 - test)</option>
+													<option value="1549">Basic Website Package(1549 - test)</option>
+													<option value="1535">Basic Website Package(1535 - test)</option>
+													<option value="1536">Basic Website Package(1536 - test)</option>
+													<option value="1541">Online Shop Package(1541 - test)</option>
+													<option value="1542">Basic Website Package(1542 - )</option>
+													<option value="1547">Basic Website Package(1547 - )</option>
+													<option value="1546">Basic Website Package(1546 - test)</option>
+													<option value="1545">Basic Website Package(1545 - )</option>
+													<option value="1544">Basic Website Package(1544 - )</option>
+													<option value="1543">Premium Website Package(1543 - test)</option>
+													<option value="1524">Online Shop Package(1524 - test)</option>
+													<option value="1525">Online Shop Package(1525 - test)</option>
+													<option value="1526">Online Shop Package(1526 - test)</option>
+													<option value="1527">Online Shop Package(1527 - test)</option>
+													<option value="1528">Basic Website Package(1528 - 2)</option>
+													<option value="1529">Basic Website Package(1529 - 2)</option>
+													<option value="1530">Online Shop Package(1530 - test)</option>
+													<option value="1531">Basic Website Package(1531 - test)</option>
+													<option value="1519">Basic Website Package(1519 - 1)</option>
+													<option value="1515">Basic Package(1515 - 2)</option>
+													<option value="1516">Basic Package(1516 - 2)</option>
+													<option value="1517">Premium Package(1517 - 2)</option>
+													<option value="1518">Premium Package(1518 - 2)</option>
+													<option value="1508">Online Shop Package(1508 - test)</option>
+													<option value="1509">Online Shop Package(1509 - test)</option>
+													<option value="1510">Online Shop Package(1510 - test)</option>
+													<option value="1511">Online Shop Package(1511 - test)</option>
+													<option value="1512">Online Shop Package(1512 - test)</option>
+													<option value="1513">Premium Package(1513 - TEst Busniness name)</option>
+													<option value="1506">Premium Package(1506 - TEst Busniness name)</option>
+													<option value="1505">Premium Package(1505 - TEst Busniness name)</option>
+													<option value="1507">Premium Package(1507 - TEst Busniness name)</option>
+													<option value="1504">Gold Package(1504 - test)</option>
+													<option value="1474">New Website Development(1474 - BATHURST EARLY CHILDHOOD)</option>
+													<option value="1469">test quote(1469 - WSS)</option>
+													<option value="1470">Quote test2(1470 - WSS)</option>
+													<option value="1466">Website Redesign(1466 - Bathurst Triathlon Club)</option>
+													<option value="1457">Quote test(1457 - ADTP)</option>
+													<option value="1449">New Website(1449 - Haldi Restaurant)</option>
+													<option value="1425">Web updates(1425 - Rail Holidays Australia)</option>
+													<option value="1423">International shipping setup and shipping options(1423 - Nifty 50)</option>
 												</select>
 										</div>
-								<div class="form-group">
-											<label for="form-field-select-1">Package Item</label>
-											<input type="text" id="form-field-1" placeholder="Package Item" class="input-fld">
+									<div class="form-group">
+												<label for="form-field-select-1">Quote Item</label>
+												<input type="text" id="form-field-1" placeholder="Module Name" class="input-fld">
+									</div>
+									<div class="form-group">
+											 <label for="form-field-select-1">Quote Description</label>
+											 <textarea id="form-field-11" class="autosize-transition form-control" placeholder="Module Description" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 72px;"></textarea>
+									 </div>
+									 <div class="select-dflt form-group">
+														 <label for="form-field-select-1">Priority</label>
+														 <select class="form-control" id="form-field-select-1">
+															 <option value="" disabled selected>Select Priority</option>
+															 <option value="0">Low</option>
+															 <option value="1">Medium</option>
+															 <option value="2">High</option>
+															 <option value="3">Urgent</option>
+														 </select>
 									</div>
 									<div class="form-group">
 												<label for="form-field-select-1">Charge</label>
-												<input type="text" id="form-field-1" placeholder="Package Item Charge" class="input-fld">
-										</div>
-										<div class="form-group">
-													<label for="form-field-select-1">Inv Charge</label>
-													<input type="text" id="form-field-1" placeholder="Package Item Inv Charge" class="input-fld">
-											</div>
+												<input type="text" id="form-field-1" placeholder="Module Charge" class="input-fld">
+									</div>
+
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -930,116 +921,47 @@
 
 
 
-			<!-- Edit edit-job-package Modal -->
-			<div class="modal fade" id="edit-package-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+			<!-- send-newsletter Modal -->
+			<div class="modal fade" id="send-newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Edit Package Item</h4>
+							<h4 class="modal-title" id="myModalLabel">Send Newsletter</h4>
 						</div>
 						<div class="modal-body">
 							<form action="">
-								<div class="select-dflt form-group">
-													<label for="form-field-select-1">Package Title</label>
-													<select class="form-control" id="form-field-select-1">
-														<option value="" disabled selected>Select Package Title</option>
-														 <option value="1">Basic Website Package(1)</option>
-														<option value="4">Online Shop Package(4)</option>
-														<option value="3">Premium Website Package(3)</option>
-														<option value="2">Professional Website Package(2)</option>
-													</select>
-											</div>
 									<div class="form-group">
-												<label for="form-field-select-1">Package Item</label>
-												<input type="text" id="form-field-1" placeholder="Package Item" class="input-fld">
+										<label for="form-field-select-1">Newsletter Name</label>
+										<select class="form-control" id="form-field-select-1">
+											<option value="0" selected disabled>Select Newsletter </option>
+											<option value="7">Test delete this</option>
+											<option value="6">Bitcoin trading software in Bathurst</option>
+											<option value="5">Happy New Year - Whats New in 2018</option>
+											<option value="4">test 13-12-2017</option>
+											<option value="3">Test newsletter name</option>
+											<option value="2">Test News letter2</option>
+											<option value="1">Test News letter Nirmalya</option>
+									 </select>
 										</div>
 										<div class="form-group">
-													<label for="form-field-select-1">Charge</label>
-													<input type="text" id="form-field-1" placeholder="Package Item Charge" class="input-fld">
+											<label for="form-field-select-1">TO</label>
+											<select class="form-control" id="form-field-select-1">
+												<option value="0">Select User Type </option>
+															<option value="1">All Customer</option>
+															<option value="2">Customers with 0 jobs</option>
+										 </select>
 											</div>
-											<div class="form-group">
-														<label for="form-field-select-1">Inv Charge</label>
-														<input type="text" id="form-field-1" placeholder="Package Item Inv Charge" class="input-fld">
-												</div>
 							</form>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
-							<button type="button" class="btn btn-primary"><i class="ace-icon fa fa-floppy-o"></i> Save</button>
+							<button type="button" class="btn btn-success"><i class="ace-icon fa fa-reply-all"></i> Send</button>
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
-
-
-
-
-		<!-- delete job-package Modal -->
-		<div class="modal fade" id="delete-package-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Delete Package Item</h4>
-					</div>
-					<div class="modal-body">
-			<h3 class="center"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="font-size:30px;"></i> <br>Are you sure?</h3>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
-						<button type="button" class="btn btn-danger"><i class="ace-iconfa fa fa-trash-o"></i> Delete</button>
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
-
-
-
-
-
-				<!-- send-newsletter Modal -->
-				<div class="modal fade" id="send-newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title" id="myModalLabel">Send Newsletter</h4>
-							</div>
-							<div class="modal-body">
-								<form action="">
-										<div class="form-group">
-											<label for="form-field-select-1">Newsletter Name</label>
-											<select class="form-control" id="form-field-select-1">
-												<option value="0" selected disabled>Select Newsletter </option>
-												<option value="7">Test delete this</option>
-												<option value="6">Bitcoin trading software in Bathurst</option>
-												<option value="5">Happy New Year - Whats New in 2018</option>
-												<option value="4">test 13-12-2017</option>
-												<option value="3">Test newsletter name</option>
-												<option value="2">Test News letter2</option>
-												<option value="1">Test News letter Nirmalya</option>
-										 </select>
-											</div>
-											<div class="form-group">
-												<label for="form-field-select-1">TO</label>
-												<select class="form-control" id="form-field-select-1">
-													<option value="0">Select User Type </option>
-																<option value="1">All Customer</option>
-																<option value="2">Customers with 0 jobs</option>
-											 </select>
-												</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
-								<button type="button" class="btn btn-success"><i class="ace-icon fa fa-reply-all"></i> Send</button>
-							</div>
-						</div><!-- /.modal-content -->
-					</div><!-- /.modal-dialog -->
-				</div><!-- /send-newsletter modal -->
+			</div><!-- /send-newsletter modal -->
 
 
 

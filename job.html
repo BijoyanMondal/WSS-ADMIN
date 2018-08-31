@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>WSS ADMIN PANEL</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- FavIcon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+		<link rel="manifest" href="assets/images/favicons/site.webmanifest">
+		<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+<link rel="stylesheet" href="assets/css/style.css" />
+		<!-- ace settings handler -->
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
+			<div class="navbar-container ace-save-state" id="navbar-container">
+				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+					<span class="sr-only">Toggle sidebar</span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+
+						<li class="light-blue dropdown-modal logout">
+							<a href="#">
+								<i class="ace-icon fa fa-power-off"></i>
+								Logout
+							</a>
+
+
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar responsive ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<a href="index.html" class="logo">
+							<img src="assets/images/logo.png" alt="WSS-logo">
+						</a>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<a href="index.html" class="small-logo">
+						<img src="assets/images/hide-logo.png" alt="WSS-logo-Small">
+						</a>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li class="">
+						<a href="index.html">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="team.html">
+								<i class="menu-icon fa fa-users"></i>
+							<span class="menu-text"> Team </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="client.html">
+								<i class="menu-icon fa fa-user-secret"></i>
+							<span class="menu-text"> Client </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="job-package.html">
+								<i class="menu-icon fa fa-briefcase"></i>
+							<span class="menu-text"> Job Package </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="package-item.html">
+								<i class="menu-icon fa fa-calendar-plus-o"></i>
+							<span class="menu-text"> Package Item </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="package-checklist.html">
+								<i class="menu-icon fa fa-list-alt"></i>
+							<span class="menu-text"> Package Checklist </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="quote.html">
+								<i class="menu-icon fa fa-quote-right"></i>
+							<span class="menu-text"> Quote </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="quote-item.html">
+								<i class="menu-icon fa fa-quote-left"></i>
+							<span class="menu-text"> Quote Item</span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="active">
+						<a href="job.html">
+								<i class="menu-icon fa fa-briefcase"></i>
+							<span class="menu-text"> Job </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="job-item-comments.html">
+								<i class="menu-icon fa fa-comments"></i>
+							<span class="menu-text"> Job Item Comments </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="team-leader-invoice.html">
+								<i class="menu-icon fa fa-file-text"></i>
+							<span class="menu-text"> Team Leader Invoice </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="report.html">
+								<i class="menu-icon fa fa-bug"></i>
+							<span class="menu-text"> Report </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="settings.html">
+								<i class="menu-icon fa fa-cogs"></i>
+							<span class="menu-text"> Settings </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> Jobs To Do </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="job-details.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									1762|Blue Door Apartments|Web Hosting and Service renewals
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="job-details.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									1761|Luxury Golf Tours Down Under|Hosting renewals
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="job-details.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									1760|The Perfect SHave|Domain Name Renewal (2 Years)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="job-details.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+								1759|Bathurst Party &amp; Event Hire|Website
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="job-details.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									1756|Graham Lupp|Website Development
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-plus-square-o"></i>
+							<span class="menu-text"> Advanced </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="news-letters.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									News Letters
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#" data-toggle="modal" data-target="#send-newsletter" >
+									<i class="menu-icon fa fa-caret-right"></i>
+									Send Newsletter
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+					</li>
+				</ul><!-- /.nav-list -->
+
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								<i class="ace-icon fa fa-home home-icon"></i>
+								<a href="index.html">Admin</a>
+							</li>
+							<li class="active">Manage Job</li>
+						</ul><!-- /.breadcrumb -->
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="ace-icon fa fa-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- /.nav-search -->
+					</div>
+
+					<div class="page-content">
+<div class="hr hr-18 dotted hr-double"></div>
+						<div class="team">
+						<!-- Add Bttn -->
+
+
+								<form action="" class="serchclie">
+                <div class="table-responsive">
+                    <table width="100%" class="table table-vcenter table-condensed table-bordered serch">
+                        <tbody><tr>
+													<td><input type="text" value="" name="jobID" class="form-control" placeholder="ID"></td>
+														<td><input type="text" value="" name="businessName" class="form-control" placeholder="Business Name"></td>
+														<td><input type="text" value="" name="jobTitle" class="form-control" placeholder="Quote Title"></td>
+                            <td class="center"><button class="btn btn-sm btn-primary">Go <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></td>
+                            </tr>
+                        </tbody></table>
+                </div>
+            </form>
+						<div class="addBttn">
+
+							<button data-toggle="modal" data-target="#add-job" class="btn btn-success btn-sm" data-rel="tooltip" title="" data-original-title="Add job">
+									<i class="ace-icon fa fa-plus icon-only"></i>
+							</button>
+						</div>
+							<div>
+								<div class="table-responsive">
+
+								<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Business Name</th>
+											<th>Job Title</th>
+											<th>Start Date</th>
+											<th>Deadline</th>
+											<th>Total Amount</th>
+											<th>Amount Paid	</th>
+											<th>Status</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+										<tr>
+											<td>1762</td>
+											<td>Blue Door Apartments</td>
+											<td><a href="job-details.html">Web Hosting and Service renewals</a></td>
+											<td>2018-08-22</td>
+											<td>2018-09-06</td>
+											<td>$265.95 USD</td>
+											<td>$265.95 USD</td>
+											<td><span class="label label-sm label-success">Completed </span></td>
+											<td>
+														<div class="hidden-sm hidden-xs btn-group">
+															<button class="btn btn-xs btn-info width-22" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																<i class="ace-icon fa fa-pencil bigger-120"></i>
+															</button>
+															<button class="btn btn-xs btn-grey width-22" data-rel="tooltip" title="" data-original-title="View" onclick="location.href = 'job-details.html';">
+																<i class="ace-icon fa fa-eye bigger-120"></i>
+															</button>
+															<button class="btn btn-xs width-22" data-rel="tooltip" title="" data-original-title="Payment Details" onclick="location.href = 'payment-details.html';">
+																<i class="fa fa-usd" aria-hidden="true"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																<i class="ace-iconfa fa fa-trash-o"></i>
+															</button>
+															<button class="btn btn-xs btn-danger width-22" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																<i class="fa fa-undo" aria-hidden="true"></i>
+															</button>
+														</div>
+
+														<div class="hidden-md hidden-lg">
+															<div class="inline pos-rel">
+																<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown" data-position="auto">
+																	<i class="ace-icon fa fa-angle-double-down icon-only bigger-110"></i>
+																</button>
+
+																<ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Edit" data-toggle="modal" data-target="#edit-job-details">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-pencil bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="job-details.html">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-eye bigger-120"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="payment-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Payment Details">
+																			<span class="blue">
+																				<i class="fa fa-usd" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="job-details.html" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Delete" data-toggle="modal" data-target="#delete-job">
+																			<span class="blue">
+																				<i class="ace-iconfa fa fa-trash-o"></i>
+																			</span>
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" class="tooltip-info" data-rel="tooltip" title="" data-original-title="Convert to Developed By Us">
+																			<span class="blue">
+																					<i class="fa fa-undo" aria-hidden="true"></i>
+																			</span>
+																		</a>
+																	</li>
+
+																</ul>
+															</div>
+														</div>
+													</td>
+										</tr>
+
+
+									</tbody>
+								</table>
+							</div>
+							<div class="paginationAll">
+														<ul class="pagination">
+														<li>
+														<a href="#" aria-label="Previous">
+														<span aria-hidden="true">Previous</span>
+														</a>
+														</li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+														<li><a href="#">5</a></li>
+														<li>
+														<a href="#" aria-label="Next">
+														<span aria-hidden="true">Next</span>
+														</a>
+														</li>
+														</ul>
+														</div>
+						</div><!-- /.page-content -->
+						</div>
+				</div>
+			</div><!-- /.main-content -->
+
+
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+		<div class="footer">
+			<div class="footer-inner">
+				<div class="footer-content">
+					<span class="bigger-120">
+						<span class="blue bolder">Website Software Solutions Com</span> &copy; 2018-2019
+					</span>
+
+					&nbsp; &nbsp;
+					<span class="action-buttons">
+						<a href="#">
+							<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+						</a>
+
+						<a href="#">
+							<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+						</a>
+
+						<a href="#">
+							<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- basic scripts -->
+
+
+		<!-- Add Contact Modal -->
+		<div class="modal fade" id="add-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Add Job</h4>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<div class="select-dflt form-group">
+												<label for="form-field-select-1">Business Name</label>
+												<select class="form-control" id="form-field-select-1">
+													<option value="168">AAA Firewood</option>
+																								<option value="192">adamresch</option>
+																								<option value="52">ADTP</option>
+																								<option value="204">All Care Carpet Cleaning</option>
+																								<option value="23">All Saints Cathedral</option>
+																								<option value="191">Allflex Engineering</option>
+																								<option value="22">Angry Richard</option>
+																								<option value="184">Appi</option>
+																								<option value="167">ARRTE</option>
+																								<option value="7">AusRover</option>
+																								<option value="24">Aussie Diggers NSW</option>
+																								<option value="79">BATHURST EARLY CHILDHOOD</option>
+																								<option value="32">Bathurst Golf Club</option>
+																								<option value="17">Bathurst Op Shop</option>
+																								<option value="189">Bathurst Party &amp; Event Hire</option>
+																								<option value="19">Bathurst Pro Shop</option>
+																								<option value="130">Bathurst Regional Physiotherapy Services</option>
+																								<option value="18">Bathurst Show Ground</option>
+																								<option value="141">Bathurst Specialist Centre</option>
+																								<option value="61">Bathurst Triathlon Club</option>
+																								<option value="82">BCCC</option>
+																								<option value="15">Beco Lighting Bathurst</option>
+																								<option value="14">Blue Door Apartments</option>
+																								<option value="196">Body and Soul</option>
+																								<option value="137">Bot Health Solutions</option>
+																								<option value="178">Brad Constable</option>
+																								<option value="138">Central West Digital Communications</option>
+																								<option value="131">Central West Pain Specialists</option>
+																								<option value="125">Centred Yoga Central West</option>
+																								<option value="39">City &amp; Country Conveyancing</option>
+																								<option value="12">close-line</option>
+																								<option value="139">Coliseum Antiques</option>
+																								<option value="13">Cosventure</option>
+																								<option value="104">Custom Golf Shafts</option>
+																								<option value="21">David Stanley</option>
+																								<option value="140">Dog Breeder</option>
+																								<option value="34">Encore Speech &amp; Drama Studio</option>
+																								<option value="144">Engadine Dragons</option>
+																								<option value="10">Everready Concrete</option>
+																								<option value="173">Farren Hotham</option>
+																								<option value="43">FBHMMS - Forbes/Bland Home Modification &amp; Maintenance Service Inc</option>
+																								<option value="35">Foam Rubber &amp; Camping</option>
+																								<option value="50">GH Sheetmetal</option>
+																								<option value="9">GPP Audit Pty Ltd</option>
+																								<option value="205">Graham Lupp</option>
+																								<option value="49">Greater Western Dogs</option>
+																								<option value="124">Grow HR Solutions</option>
+																								<option value="46">Haldi Restaurant</option>
+																								<option value="20">Home Away From Home Bimbadeen</option>
+																								<option value="190">Hot Tuna Media Pty Ltd</option>
+																								<option value="37">Hunt's Shooting Supplies</option>
+																								<option value="66">ib vogt</option>
+																								<option value="133">Insulated Double Glazing</option>
+																								<option value="119">Jackos Furniture Removals</option>
+																								<option value="42">James Taylor Solicitor</option>
+																								<option value="202">Japer &amp; Co</option>
+																								<option value="143">Jenny McIntosh</option>
+																								<option value="136">Jones Performance</option>
+																								<option value="62">Jro Group</option>
+																								<option value="33">Kenwood Homes</option>
+																								<option value="183">Lavrovmxm</option>
+																								<option value="169">Light it up Golf</option>
+																								<option value="36">Lithgow Golf Club</option>
+																								<option value="38">Lochinvar Rovers FC</option>
+																								<option value="31">Luxury Golf Tours Down Under</option>
+																								<option value="121">Macquarie United</option>
+																								<option value="5">Mid West Solar</option>
+																								<option value="181">MItch Cameron Photography</option>
+																								<option value="142">More Time Book Keeping</option>
+																								<option value="185">Morestone Group</option>
+																								<option value="27">MRG Electrical</option>
+																								<option value="147">Mudgee Golf Club</option>
+																								<option value="129">Nectar Creative Communications</option>
+																								<option value="11">Neighbourhood Centre Bathurst</option>
+																								<option value="51">Newmans Fuels and Buses</option>
+																								<option value="16">Nicks Full Of Skip</option>
+																								<option value="30">Nifty 50</option>
+																								<option value="29">Orange Runners Club</option>
+																								<option value="45">Orange Running Festival</option>
+																								<option value="135">Patonga Pups</option>
+																								<option value="6">Plantation House Bathurst</option>
+																								<option value="25">Rail Holidays Australia</option>
+																								<option value="158">Richardcot</option>
+																								<option value="146">Rohit chemicals</option>
+																								<option value="80">Serrated tussock</option>
+																								<option value="41">Simmons Glass &amp; Trim</option>
+																								<option value="148">StudyPsych</option>
+																								<option value="109">Sydney Cooking School</option>
+																								<option value="128">t5t5</option>
+																								<option value="103">test</option>
+																								<option value="115">test</option>
+																								<option value="117">Test 1 Bussiness name</option>
+																								<option value="187">Test business</option>
+																								<option value="134">test business name</option>
+																								<option value="105">TEst Busniness name</option>
+																								<option value="44">The Perfect SHave</option>
+																								<option value="145">The Property Shop</option>
+																								<option value="8">Trounson Realty</option>
+																								<option value="132">True Blue Air Conditioning</option>
+																								<option value="26">Vanessa Pringle Floral Designs</option>
+																								<option value="172">Western Garage Doors</option>
+																								<option value="28">Winning Ways</option>
+																								<option value="58">WSS</option>
+												</select>
+										</div>
+										<div class="select-dflt form-group">
+															<label for="form-field-select-1">Package Name</label>
+															<select class="form-control" id="form-field-select-1">
+																<option value="" disabled selected>Select Package Name</option>
+				                         <option value="1">Basic Website Package(1)</option>
+			                          <option value="4">Online Shop Package(4)</option>
+			                          <option value="3">Premium Website Package(3)</option>
+			                          <option value="2">Professional Website Package(2)</option>
+															</select>
+													</div>
+									<div class="form-group">
+												<label for="form-field-select-1">Job Title</label>
+												<input type="text" id="form-field-1" placeholder="Job Title" class="input-fld">
+									</div>
+									<div class="form-group">
+											 <label for="form-field-select-1">Job Description</label>
+											 <textarea id="form-field-11" class="autosize-transition form-control" placeholder="Job Description" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 72px;"></textarea>
+									 </div>
+									 <div class="form-group">
+									 			<label for="form-field-select-1">Start Date</label>
+									 			<input type="text" id="form-field-1" placeholder="Start Date" class="input-fld">
+									 </div>
+									 <div class="form-group">
+ 												<label for="form-field-select-1">Deadline</label>
+ 												<input type="text" id="form-field-1" placeholder="Deadline" class="input-fld">
+ 									</div>
+									<div class="form-group">
+												<label for="form-field-select-1">Complete Date</label>
+												<input type="text" id="form-field-1" placeholder="Complete Date" class="input-fld">
+									</div>
+									 <div class="select-dflt form-group">
+														 <label for="form-field-select-1">Status</label>
+														 <select class="form-control" id="form-field-select-1">
+															 <option value="" disabled selected>Select Status</option>
+															 <option value="0">Active</option>
+															 <option value="1">Accepted</option>
+															 <option value="3">Canceled</option>
+														 </select>
+												 </div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
+						<button type="button" class="btn btn-primary"><i class="ace-icon fa fa-floppy-o"></i> Save</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+	<!-- Add Contact Modal -->
+	<div class="modal fade" id="edit-job-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Edit Job</h4>
+				</div>
+				<div class="modal-body">
+					<form action="">
+						<div class="select-dflt form-group">
+											<label for="form-field-select-1">Business Name</label>
+											<select class="form-control" id="form-field-select-1">
+												<option value="168">AAA Firewood</option>
+																							<option value="192">adamresch</option>
+																							<option value="52">ADTP</option>
+																							<option value="204">All Care Carpet Cleaning</option>
+																							<option value="23">All Saints Cathedral</option>
+																							<option value="191">Allflex Engineering</option>
+																							<option value="22">Angry Richard</option>
+																							<option value="184">Appi</option>
+																							<option value="167">ARRTE</option>
+																							<option value="7">AusRover</option>
+																							<option value="24">Aussie Diggers NSW</option>
+																							<option value="79">BATHURST EARLY CHILDHOOD</option>
+																							<option value="32">Bathurst Golf Club</option>
+																							<option value="17">Bathurst Op Shop</option>
+																							<option value="189">Bathurst Party &amp; Event Hire</option>
+																							<option value="19">Bathurst Pro Shop</option>
+																							<option value="130">Bathurst Regional Physiotherapy Services</option>
+																							<option value="18">Bathurst Show Ground</option>
+																							<option value="141">Bathurst Specialist Centre</option>
+																							<option value="61">Bathurst Triathlon Club</option>
+																							<option value="82">BCCC</option>
+																							<option value="15">Beco Lighting Bathurst</option>
+																							<option value="14">Blue Door Apartments</option>
+																							<option value="196">Body and Soul</option>
+																							<option value="137">Bot Health Solutions</option>
+																							<option value="178">Brad Constable</option>
+																							<option value="138">Central West Digital Communications</option>
+																							<option value="131">Central West Pain Specialists</option>
+																							<option value="125">Centred Yoga Central West</option>
+																							<option value="39">City &amp; Country Conveyancing</option>
+																							<option value="12">close-line</option>
+																							<option value="139">Coliseum Antiques</option>
+																							<option value="13">Cosventure</option>
+																							<option value="104">Custom Golf Shafts</option>
+																							<option value="21">David Stanley</option>
+																							<option value="140">Dog Breeder</option>
+																							<option value="34">Encore Speech &amp; Drama Studio</option>
+																							<option value="144">Engadine Dragons</option>
+																							<option value="10">Everready Concrete</option>
+																							<option value="173">Farren Hotham</option>
+																							<option value="43">FBHMMS - Forbes/Bland Home Modification &amp; Maintenance Service Inc</option>
+																							<option value="35">Foam Rubber &amp; Camping</option>
+																							<option value="50">GH Sheetmetal</option>
+																							<option value="9">GPP Audit Pty Ltd</option>
+																							<option value="205">Graham Lupp</option>
+																							<option value="49">Greater Western Dogs</option>
+																							<option value="124">Grow HR Solutions</option>
+																							<option value="46">Haldi Restaurant</option>
+																							<option value="20">Home Away From Home Bimbadeen</option>
+																							<option value="190">Hot Tuna Media Pty Ltd</option>
+																							<option value="37">Hunt's Shooting Supplies</option>
+																							<option value="66">ib vogt</option>
+																							<option value="133">Insulated Double Glazing</option>
+																							<option value="119">Jackos Furniture Removals</option>
+																							<option value="42">James Taylor Solicitor</option>
+																							<option value="202">Japer &amp; Co</option>
+																							<option value="143">Jenny McIntosh</option>
+																							<option value="136">Jones Performance</option>
+																							<option value="62">Jro Group</option>
+																							<option value="33">Kenwood Homes</option>
+																							<option value="183">Lavrovmxm</option>
+																							<option value="169">Light it up Golf</option>
+																							<option value="36">Lithgow Golf Club</option>
+																							<option value="38">Lochinvar Rovers FC</option>
+																							<option value="31">Luxury Golf Tours Down Under</option>
+																							<option value="121">Macquarie United</option>
+																							<option value="5">Mid West Solar</option>
+																							<option value="181">MItch Cameron Photography</option>
+																							<option value="142">More Time Book Keeping</option>
+																							<option value="185">Morestone Group</option>
+																							<option value="27">MRG Electrical</option>
+																							<option value="147">Mudgee Golf Club</option>
+																							<option value="129">Nectar Creative Communications</option>
+																							<option value="11">Neighbourhood Centre Bathurst</option>
+																							<option value="51">Newmans Fuels and Buses</option>
+																							<option value="16">Nicks Full Of Skip</option>
+																							<option value="30">Nifty 50</option>
+																							<option value="29">Orange Runners Club</option>
+																							<option value="45">Orange Running Festival</option>
+																							<option value="135">Patonga Pups</option>
+																							<option value="6">Plantation House Bathurst</option>
+																							<option value="25">Rail Holidays Australia</option>
+																							<option value="158">Richardcot</option>
+																							<option value="146">Rohit chemicals</option>
+																							<option value="80">Serrated tussock</option>
+																							<option value="41">Simmons Glass &amp; Trim</option>
+																							<option value="148">StudyPsych</option>
+																							<option value="109">Sydney Cooking School</option>
+																							<option value="128">t5t5</option>
+																							<option value="103">test</option>
+																							<option value="115">test</option>
+																							<option value="117">Test 1 Bussiness name</option>
+																							<option value="187">Test business</option>
+																							<option value="134">test business name</option>
+																							<option value="105">TEst Busniness name</option>
+																							<option value="44">The Perfect SHave</option>
+																							<option value="145">The Property Shop</option>
+																							<option value="8">Trounson Realty</option>
+																							<option value="132">True Blue Air Conditioning</option>
+																							<option value="26">Vanessa Pringle Floral Designs</option>
+																							<option value="172">Western Garage Doors</option>
+																							<option value="28">Winning Ways</option>
+																							<option value="58">WSS</option>
+											</select>
+									</div>
+									<div class="select-dflt form-group">
+														<label for="form-field-select-1">Package Name</label>
+														<select class="form-control" id="form-field-select-1">
+															<option value="" disabled selected>Select Package Name</option>
+															 <option value="1">Basic Website Package(1)</option>
+															<option value="4">Online Shop Package(4)</option>
+															<option value="3">Premium Website Package(3)</option>
+															<option value="2">Professional Website Package(2)</option>
+														</select>
+												</div>
+								<div class="form-group">
+											<label for="form-field-select-1">Job Title</label>
+											<input type="text" id="form-field-1" placeholder="Job Title" class="input-fld">
+								</div>
+								<div class="form-group">
+										 <label for="form-field-select-1">Job Description</label>
+										 <textarea id="form-field-11" class="autosize-transition form-control" placeholder="Job Description" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 72px;"></textarea>
+								 </div>
+								 <div class="form-group">
+											<label for="form-field-select-1">Start Date</label>
+											<input type="text" id="form-field-1" placeholder="Start Date" class="input-fld">
+								 </div>
+								 <div class="form-group">
+											<label for="form-field-select-1">Deadline</label>
+											<input type="text" id="form-field-1" placeholder="Deadline" class="input-fld">
+								</div>
+								<div class="form-group">
+											<label for="form-field-select-1">Complete Date</label>
+											<input type="text" id="form-field-1" placeholder="Complete Date" class="input-fld">
+								</div>
+								 <div class="select-dflt form-group">
+													 <label for="form-field-select-1">Status</label>
+													 <select class="form-control" id="form-field-select-1">
+														 <option value="" disabled selected>Select Status</option>
+														 <option value="0">Active</option>
+														 <option value="1">Accepted</option>
+														 <option value="3">Canceled</option>
+													 </select>
+											 </div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
+					<button type="button" class="btn btn-primary"><i class="ace-icon fa fa-floppy-o"></i> Save</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- delete job-package Modal -->
+	<div class="modal fade" id="delete-job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Delete Job</h4>
+				</div>
+				<div class="modal-body">
+		<h3 class="center"><i class="fa fa-exclamation-triangle" aria-hidden="true" style="font-size:30px;"></i> <br>Are you sure?</h3>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
+					<button type="button" class="btn btn-danger"><i class="ace-iconfa fa fa-trash-o"></i> Delete</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+
+			<!-- send-newsletter Modal -->
+			<div class="modal fade" id="send-newsletter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Send Newsletter</h4>
+						</div>
+						<div class="modal-body">
+							<form action="">
+									<div class="form-group">
+										<label for="form-field-select-1">Newsletter Name</label>
+										<select class="form-control" id="form-field-select-1">
+											<option value="0" selected disabled>Select Newsletter </option>
+											<option value="7">Test delete this</option>
+											<option value="6">Bitcoin trading software in Bathurst</option>
+											<option value="5">Happy New Year - Whats New in 2018</option>
+											<option value="4">test 13-12-2017</option>
+											<option value="3">Test newsletter name</option>
+											<option value="2">Test News letter2</option>
+											<option value="1">Test News letter Nirmalya</option>
+									 </select>
+										</div>
+										<div class="form-group">
+											<label for="form-field-select-1">TO</label>
+											<select class="form-control" id="form-field-select-1">
+												<option value="0">Select User Type </option>
+															<option value="1">All Customer</option>
+															<option value="2">Customers with 0 jobs</option>
+										 </select>
+											</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fa fa-repeat" aria-hidden="true"></i> Cancle</button>
+							<button type="button" class="btn btn-success"><i class="ace-icon fa fa-reply-all"></i> Send</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /send-newsletter modal -->
+
+
+
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/jquery-ui.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/jquery.sparkline.index.min.js"></script>
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<script src="assets/js/jquery.bootstrap-duallistbox.min.js"></script>
+		<script src="assets/js/jquery.raty.min.js"></script>
+		<script src="assets/js/bootstrap-multiselect.min.js"></script>
+		<script src="assets/js/select2.min.js"></script>
+		<script src="assets/js/jquery-typeahead.js"></script>
+
+				<!-- inline scripts related to this page -->
+				<script type="text/javascript">
+
+				$('[data-rel=tooltip]').tooltip();
+				$('[data-rel=popover]').popover({html:true});
+
+					jQuery(function($){
+					    var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
+						var container1 = demo1.bootstrapDualListbox('getContainer');
+						container1.find('.btn').addClass('btn-white btn-info btn-bold');
+
+						/**var setRatingColors = function() {
+							$(this).find('.star-on-png,.star-half-png').addClass('orange2').removeClass('grey');
+							$(this).find('.star-off-png').removeClass('orange2').addClass('grey');
+						}*/
+						$('.rating').raty({
+							'cancel' : true,
+							'half': true,
+							'starType' : 'i'
+							/**,
+
+							'click': function() {
+								setRatingColors.call(this);
+							},
+							'mouseover': function() {
+								setRatingColors.call(this);
+							},
+							'mouseout': function() {
+								setRatingColors.call(this);
+							}*/
+						})//.find('i:not(.star-raty)').addClass('grey');
+
+
+
+						//////////////////
+						//select2
+						$('.select2').css('width','200px').select2({allowClear:true})
+						$('#select2-multiple-style .btn').on('click', function(e){
+							var target = $(this).find('input[type=radio]');
+							var which = parseInt(target.val());
+							if(which == 2) $('.select2').addClass('tag-input-style');
+							 else $('.select2').removeClass('tag-input-style');
+						});
+
+						//////////////////
+						$('.multiselect').multiselect({
+						 enableFiltering: true,
+						 enableHTML: true,
+						 buttonClass: 'btn btn-white btn-primary',
+						 templates: {
+							button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> &nbsp;<b class="fa fa-caret-down"></b></button>',
+							ul: '<ul class="multiselect-container dropdown-menu"></ul>',
+							filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
+							filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
+							li: '<li><a tabindex="0"><label></label></a></li>',
+					        divider: '<li class="multiselect-item divider"></li>',
+					        liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
+						 }
+						});
+
+
+						///////////////////
+
+						//typeahead.js
+						//example taken from plugin's page at: https://twitter.github.io/typeahead.js/examples/
+						var substringMatcher = function(strs) {
+							return function findMatches(q, cb) {
+								var matches, substringRegex;
+
+								// an array that will be populated with substring matches
+								matches = [];
+
+								// regex used to determine if a string contains the substring `q`
+								substrRegex = new RegExp(q, 'i');
+
+								// iterate through the pool of strings and for any string that
+								// contains the substring `q`, add it to the `matches` array
+								$.each(strs, function(i, str) {
+									if (substrRegex.test(str)) {
+										// the typeahead jQuery plugin expects suggestions to a
+										// JavaScript object, refer to typeahead docs for more info
+										matches.push({ value: str });
+									}
+								});
+
+								cb(matches);
+							}
+						 }
+
+						 $('input.typeahead').typeahead({
+							hint: true,
+							highlight: true,
+							minLength: 1
+						 }, {
+							name: 'states',
+							displayKey: 'value',
+							source: substringMatcher(ace.vars['US_STATES']),
+							limit: 10
+						 });
+
+
+						///////////////
+
+
+						//in ajax mode, remove remaining elements before leaving page
+						$(document).one('ajaxloadstart.page', function(e) {
+							$('[class*=select2]').remove();
+							$('select[name="duallistbox_demo1[]"]').bootstrapDualListbox('destroy');
+							$('.rating').raty('destroy');
+							$('.multiselect').multiselect('destroy');
+						});
+
+					});
+				</script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				$('.easy-pie-chart.percentage').each(function(){
+					var $box = $(this).closest('.infobox');
+					var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+					var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+					var size = parseInt($(this).data('size')) || 50;
+					$(this).easyPieChart({
+						barColor: barColor,
+						trackColor: trackColor,
+						scaleColor: false,
+						lineCap: 'butt',
+						lineWidth: parseInt(size/10),
+						animate: ace.vars['old_ie'] ? false : 1000,
+						size: size
+					});
+				})
+
+				$('.sparkline').each(function(){
+					var $box = $(this).closest('.infobox');
+					var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+					$(this).sparkline('html',
+									 {
+										tagValuesAttribute:'data-values',
+										type: 'bar',
+										barColor: barColor ,
+										chartRangeMin:$(this).data('min') || 0
+									 });
+				});
+
+
+				var d1 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.5) {
+					d1.push([i, Math.sin(i)]);
+				}
+
+				var d2 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.5) {
+					d2.push([i, Math.cos(i)]);
+				}
+
+				var d3 = [];
+				for (var i = 0; i < Math.PI * 2; i += 0.2) {
+					d3.push([i, Math.tan(i)]);
+				}
+
+
+				var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
+				$.plot("#sales-charts", [
+					{ label: "Domains", data: d1 },
+					{ label: "Hosting", data: d2 },
+					{ label: "Services", data: d3 }
+				], {
+					hoverable: true,
+					shadowSize: 0,
+					series: {
+						lines: { show: true },
+						points: { show: true }
+					},
+					xaxis: {
+						tickLength: 0
+					},
+					yaxis: {
+						ticks: 10,
+						min: -2,
+						max: 2,
+						tickDecimals: 3
+					},
+					grid: {
+						backgroundColor: { colors: [ "#fff", "#fff" ] },
+						borderWidth: 1,
+						borderColor:'#555'
+					}
+				});
+
+
+				$('#recent-box [data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+				function tooltip_placement(context, source) {
+					var $source = $(source);
+					var $parent = $source.closest('.tab-content')
+					var off1 = $parent.offset();
+					var w1 = $parent.width();
+
+					var off2 = $source.offset();
+					//var w2 = $source.width();
+
+					if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+					return 'left';
+				}
+
+
+				$('.dialogs,.comments').ace_scroll({
+					size: 300
+			    });
+
+
+				//Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+				//so disable dragging when clicking on label
+				var agent = navigator.userAgent.toLowerCase();
+				if(ace.vars['touch'] && ace.vars['android']) {
+				  $('#tasks').on('touchstart', function(e){
+					var li = $(e.target).closest('#tasks li');
+					if(li.length == 0)return;
+					var label = li.find('label.inline').get(0);
+					if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+				  });
+				}
+
+				$('#tasks').sortable({
+					opacity:0.8,
+					revert:true,
+					forceHelperSize:true,
+					placeholder: 'draggable-placeholder',
+					forcePlaceholderSize:true,
+					tolerance:'pointer',
+					stop: function( event, ui ) {
+						//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
+						$(ui.item).css('z-index', 'auto');
+					}
+					}
+				);
+				$('#tasks').disableSelection();
+				$('#tasks input:checkbox').removeAttr('checked').on('click', function(){
+					if(this.checked) $(this).closest('li').addClass('selected');
+					else $(this).closest('li').removeClass('selected');
+				});
+
+
+				//show the dropdowns on top or bottom depending on window height and menu position
+				$('#task-tab .dropdown-hover').on('mouseenter', function(e) {
+					var offset = $(this).offset();
+
+					var $w = $(window)
+					if (offset.top > $w.scrollTop() + $w.innerHeight() - 100)
+						$(this).addClass('dropup');
+					else $(this).removeClass('dropup');
+				});
+
+			})
+
+
+			$('#id-input-file-1 , #id-input-file-2').ace_file_input({
+					no_file:'No File ...',
+					btn_choose:'Choose',
+					btn_change:'Change',
+					droppable:false,
+					onchange:null,
+					thumbnail:false //| true | large.
+					//whitelist:'gif|png|jpg|jpeg'
+					//blacklist:'exe|php'
+					//onchange:''
+					//
+				});
+		</script>
+
+
+
+
+
+
+
+	</body>
+</html>

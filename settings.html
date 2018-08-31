@@ -40,7 +40,7 @@
 		<![endif]-->
 
 		<!-- inline styles related to this page -->
-		<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
 		<!-- ace settings handler -->
 		<script src="assets/js/ace-extra.min.js"></script>
 
@@ -53,7 +53,7 @@
 	</head>
 
 	<body class="no-skin">
-		<div id="navbar" class="navbar navbar-default          ace-save-state">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
 			<div class="navbar-container ace-save-state" id="navbar-container">
 				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
 					<span class="sr-only">Toggle sidebar</span>
@@ -86,7 +86,7 @@
 				try{ace.settings.loadState('main-container')}catch(e){}
 			</script>
 
-			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+			<div id="sidebar" class="sidebar responsive ace-save-state">
 				<script type="text/javascript">
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
@@ -106,7 +106,7 @@
 				</div><!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
-					<li class="active">
+					<li class="">
 						<a href="index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text"> Dashboard </span>
@@ -212,7 +212,7 @@
 						<b class="arrow"></b>
 					</li>
 
-					<li class="">
+					<li class="active">
 						<a href="settings.html">
 								<i class="menu-icon fa fa-cogs"></i>
 							<span class="menu-text"> Settings </span>
@@ -326,7 +326,7 @@
 								<i class="ace-icon fa fa-home home-icon"></i>
 								<a href="index.html">Admin</a>
 							</li>
-							<li class="active">Dashboard</li>
+							<li class="active"> Edit Manage Settings</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -341,531 +341,135 @@
 
 					<div class="page-content">
 <div class="hr hr-18 dotted hr-double"></div>
-						<div class="row">
-							<div class="col-xs-12">
-								<!-- PAGE CONTENT BEGINS -->
-								<div class="widget-box transparent" id="recent-box">
-									<div class="widget-header">
-										<h4 class="widget-title lighter smaller">
-											<div class="form-group filter-box-top">
-<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="food">Select Business Name</label>
-
-<div class="col-xs-12 col-sm-9">
-	<select id="business_name" class="multiselect" multiple="">
-		<option value="cheese">Morestone Group</option>
-		<option value="tomatoes">Morestone Group</option>
-		<option value="mozarella">Morestone Group</option>
-		<option value="mushrooms">Morestone Group</option>
-		<option value="pepperoni">Morestone Group</option>
-		</select>
-
-
-</div>
-</div>
-																						</h4>
-
-										<div class="widget-toolbar no-border">
-											<ul class="nav nav-tabs" id="recent-tab">
-												<li class="active">
-													<a data-toggle="tab" href="#jobs-to-do">Jobs To Do</a>
-												</li>
-
-												<li>
-													<a data-toggle="tab" href="#job-completed">Jobs Completed</a>
-												</li>
-
-												<li>
-													<a data-toggle="tab" href="#job-canceled">Jobs canceled</a>
-												</li>
-											</ul>
+						<div class="team">
+						<!-- Add Bttn -->
+						<form action="">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">Hourly Rate</label>
+												<input type="text" id="form-field-1" placeholder="Hourly Rate" class="input-fld">
 										</div>
-									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">Deposit Percentage</label>
+									<input type="text" id="form-field-1" placeholder="Deposit Percentage" class="input-fld">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">BSB</label>
+												<input type="text" id="form-field-1" placeholder="BSB" class="input-fld">
+										</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">A/C No.</label>
+									<input type="text" id="form-field-1" placeholder="A/C No." class="input-fld">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">Payment Terms</label>
+												<input type="text" id="form-field-1" placeholder="Payment Terms" class="input-fld">
+										</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">WSS biz ABN no.</label>
+									<input type="text" id="form-field-1" placeholder="WSS biz ABN no" class="input-fld">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">Address1</label>
+												<textarea id="form-field-11" class="autosize-transition form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 72px;"></textarea>
+										</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">Address2</label>
+												<textarea id="form-field-11" class="autosize-transition form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 72px;"></textarea>
+										</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="form-group">
+												<label for="form-field-select-1">Mobile</label>
+												<input type="text" id="form-field-1" placeholder="Mobile" class="input-fld">
+										</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">Online Discount Amount</label>
+									<input type="text" id="form-field-1" placeholder="Online Discount Amount" class="input-fld">
+								</div>
+							</div>
 
-									<div class="widget-body">
-										<div class="widget-main padding-0">
-											<div class="tab-content">
-												<div id="jobs-to-do" class="tab-pane active">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<div class="select-dflt form-group">
+											 <label for="form-field-select-1">Apply GST</label>
+											 <select class="form-control" id="form-field-select-1">
+												 <option value="0" disabled selected>Apply GST</option>
+												 <option value="0">No</option>
+											 <option value="1">Yes</option>
+											 </select>
+									 </div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">GST(%)</label>
+									<input type="text" id="form-field-1" placeholder="GST(%)" class="input-fld">
+								</div>
+							</div>
 
-													<div class="allDashboard">
-														<div class="table-header">
-															Jobs To Do
-														</div>
-
-														<!-- div.table-responsive -->
-
-														<!-- div.dataTables_borderWrap -->
-														<div>
-															<div class="table-responsive">
-
-															<table id="dynamic-table" class="table table-striped table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th class="center">Job ID</th>
-																		<th>Business Name</th>
-																		<th>Job Title</th>
-																		<th>Inv Amount</th>
-																		<th>Paid Amount</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes	</td>
-																		<td>6,400</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Active</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																</tbody>
-															</table>
-														</div>
-														<!-- Start pagination -->
-													<div class="paginationAll">
-														<ul class="pagination">
-														<li>
-														<a href="#" aria-label="Previous">
-														<span aria-hidden="true">Previous</span>
-														</a>
-														</li>
-														<li class="active"><a href="#">1</a></li>
-														<li><a href="#">2</a></li>
-														<li><a href="#">3</a></li>
-														<li><a href="#">4</a></li>
-														<li><a href="#">5</a></li>
-														<li>
-														<a href="#" aria-label="Next">
-														<span aria-hidden="true">Next</span>
-														</a>
-														</li>
-														</ul>
-														</div>
-														<!-- End Start pagination -->
-														</div>
-													</div>
-												</div>
-
-												<div id="job-completed" class="tab-pane">
-													<div class="allDashboard">
-														<div class="table-header">
-															Jobs Completed
-														</div>
-
-														<!-- div.table-responsive -->
-
-														<!-- div.dataTables_borderWrap -->
-														<div>
-															<div class="table-responsive">
-
-															<table id="dynamic-table2" class="table table-striped table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th class="center">Job ID</th>
-																		<th>Business Name</th>
-																		<th>Job Title</th>
-																		<th>Module Charge</th>
-																		<th>Inv Amount</th>
-																		<th>Amount owed</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td>$275.00</td>
-																		<td>$275.00</td>
-																		<td>$0.00</td>
-																		<td><span class="label label-sm label-success">Completed</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-
-																</tbody>
-															</table>
-														</div>
-														<!-- Start pagination -->
-													<div class="paginationAll">
-														<ul class="pagination">
-														<li>
-														<a href="#" aria-label="Previous">
-														<span aria-hidden="true">Previous</span>
-														</a>
-														</li>
-														<li class="active"><a href="#">1</a></li>
-														<li><a href="#">2</a></li>
-														<li><a href="#">3</a></li>
-														<li><a href="#">4</a></li>
-														<li><a href="#">5</a></li>
-														<li>
-														<a href="#" aria-label="Next">
-														<span aria-hidden="true">Next</span>
-														</a>
-														</li>
-														</ul>
-														</div>
-														<!-- End Start pagination -->
-														</div>
-													</div>
-												</div><!-- /.#job-completed -->
-
-												<div id="job-canceled" class="tab-pane">
-													<div class="allDashboard">
-														<div class="table-header">
-															Jobs Canceled
-														</div>
-
-														<!-- div.table-responsive -->
-
-														<!-- div.dataTables_borderWrap -->
-														<div>
-															<div class="table-responsive">
-
-															<table id="dynamic-table2" class="table table-striped table-bordered table-hover">
-																<thead>
-																	<tr>
-																		<th class="center">Job ID</th>
-																		<th>Business Name</th>
-																		<th>Job Title</th>
-																		<th>Job Status</th>
-																		<th>Latest Comment</th>
-																	</tr>
-																</thead>
-
-																<tbody>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-																	</tr>
-																	<tr>
-																		<td class="center"><a href="job-details.html">15985</a></td>
-																		<td>Morestone Group
-																		</td>
-																		<td>Wesbite Style and Layout changes</td>
-																		<td><span class="label label-sm label-danger">3</span></td>
-																		<td>okay, will work on it.</td>
-
-																	</tr>
-
-																</tbody>
-															</table>
-														</div>
-														<!-- Start pagination -->
-													<div class="paginationAll">
-														<ul class="pagination">
-														<li>
-														<a href="#" aria-label="Previous">
-														<span aria-hidden="true">Previous</span>
-														</a>
-														</li>
-														<li class="active"><a href="#">1</a></li>
-														<li><a href="#">2</a></li>
-														<li><a href="#">3</a></li>
-														<li><a href="#">4</a></li>
-														<li><a href="#">5</a></li>
-														<li>
-														<a href="#" aria-label="Next">
-														<span aria-hidden="true">Next</span>
-														</a>
-														</li>
-														</ul>
-														</div>
-														<!-- End Start pagination -->
-														</div>
-													</div>
-												</div>
-											</div>
-										</div><!-- /.widget-main -->
-									</div><!-- /.widget-body -->
-								</div><!-- /.widget-box -->
-
-								<!-- PAGE CONTENT ENDS -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!-- /.page-content -->
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+									<label for="form-field-select-1">GST will be applied from(YYYY-mm-dd Format)</label>
+									<input type="text" id="form-field-1" placeholder="YYYY-MM-DD" class="input-fld">
+								</div>
+								<div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+<button type="button" class="btn btn-primary setting-sev-bttn"><i class="ace-icon fa fa-floppy-o"></i> Save</button>
+								</div>
+							</div>
+						</form>
+						</div>
+						</div>
 				</div>
 			</div><!-- /.main-content -->
 
-			<div class="footer">
-				<div class="footer-inner">
-					<div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">Website Software Solutions Com</span> &copy; 2018-2019
-						</span>
 
-						&nbsp; &nbsp;
-						<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
-						</span>
-					</div>
-				</div>
-			</div>
 
 			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
 				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
 			</a>
 		</div><!-- /.main-container -->
+		<div class="footer">
+			<div class="footer-inner">
+				<div class="footer-content">
+					<span class="bigger-120">
+						<span class="blue bolder">Website Software Solutions Com</span> &copy; 2018-2019
+					</span>
 
+					&nbsp; &nbsp;
+					<span class="action-buttons">
+						<a href="#">
+							<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+						</a>
 
+						<a href="#">
+							<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+						</a>
 
-
-
-
-
-
+						<a href="#">
+							<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- basic scripts -->
 
 
 
@@ -915,21 +519,24 @@
 				</div><!-- /send-newsletter modal -->
 
 
+
+
+
 		<!--[if !IE]> -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
-	<script src="assets/js/jquery-1.11.3.min.js"></script>
-	<![endif]-->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
 		<script type="text/javascript">
 			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<!-- page specific plugin scripts -->
 		<!--[if lte IE 8]>
-			<script src="assets/js/excanvas.min.js"></script>
+		  <script src="assets/js/excanvas.min.js"></script>
 		<![endif]-->
 		<script src="assets/js/jquery-ui.custom.min.js"></script>
 		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
@@ -951,7 +558,7 @@
 				$('[data-rel=popover]').popover({html:true});
 
 					jQuery(function($){
-							var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
+					    var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
 						var container1 = demo1.bootstrapDualListbox('getContainer');
 						container1.find('.btn').addClass('btn-white btn-info btn-bold');
 
@@ -999,8 +606,8 @@
 							filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
 							filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
 							li: '<li><a tabindex="0"><label></label></a></li>',
-									divider: '<li class="multiselect-item divider"></li>',
-									liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
+					        divider: '<li class="multiselect-item divider"></li>',
+					        liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
 						 }
 						});
 
@@ -1153,19 +760,19 @@
 
 				$('.dialogs,.comments').ace_scroll({
 					size: 300
-					});
+			    });
 
 
 				//Android's default browser somehow is confused when tapping on label which will lead to dragging the task
 				//so disable dragging when clicking on label
 				var agent = navigator.userAgent.toLowerCase();
 				if(ace.vars['touch'] && ace.vars['android']) {
-					$('#tasks').on('touchstart', function(e){
+				  $('#tasks').on('touchstart', function(e){
 					var li = $(e.target).closest('#tasks li');
 					if(li.length == 0)return;
 					var label = li.find('label.inline').get(0);
 					if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
-					});
+				  });
 				}
 
 				$('#tasks').sortable({
@@ -1207,13 +814,17 @@
 					btn_change:'Change',
 					droppable:false,
 					onchange:null,
-					thumbnail:false //| true | large
+					thumbnail:false //| true | large.
 					//whitelist:'gif|png|jpg|jpeg'
 					//blacklist:'exe|php'
 					//onchange:''
 					//
 				});
 		</script>
+
+
+
+
 
 
 
